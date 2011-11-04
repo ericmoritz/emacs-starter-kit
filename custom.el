@@ -35,3 +35,10 @@
 
 (add-hook 'python-mode-hook
           (lambda () (flyspell-prog-mode)))
+
+(setq org-todo-keywords
+             '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+
+
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
