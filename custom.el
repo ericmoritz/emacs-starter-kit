@@ -42,3 +42,6 @@
 
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+; Why isn't this built into erlang-mode? ugh
+(add-to-list (quote auto-mode-alist) (cons "\\.erl$" (function erlang-mode)))
